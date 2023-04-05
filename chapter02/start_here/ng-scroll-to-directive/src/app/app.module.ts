@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ScrolToDirective } from './directives/scrol-to.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScrolToDirective
   ],
   imports: [
     BrowserModule,

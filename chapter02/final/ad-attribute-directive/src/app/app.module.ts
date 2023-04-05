@@ -7,16 +7,19 @@ import { FormsModule } from '@angular/forms';
 import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HighlightDirective
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HighlightDirective
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
+    providers: [],
+    exports: [
+        HighlightDirective
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,15 +6,18 @@ import { AppComponent } from './app.component';
 import { ReadTimeDirective } from './directives/read-time.directive';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ReadTimeDirective
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        ReadTimeDirective
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule
+    ],
+    providers: [],
+    exports: [
+        ReadTimeDirective
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

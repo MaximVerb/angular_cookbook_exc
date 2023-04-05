@@ -7,16 +7,19 @@ import { NotificationsManagerComponent } from './notifications-manager/notificat
 import { NotificationsButtonComponent } from './notifications-button/notifications-button.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NotificationsManagerComponent,
-    NotificationsButtonComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NotificationsManagerComponent,
+        NotificationsButtonComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule
+    ],
+    providers: [],
+    exports: [
+        NotificationsManagerComponent
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
